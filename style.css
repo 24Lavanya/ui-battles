@@ -1,0 +1,256 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth ;
+}
+body {
+    margin: 0;
+    background-color: #0D0D0D;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 20px 20px;
+    margin-top: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+.home{
+    height: 100vh;
+    background-color: black;
+    width: 100%;
+    color:white;
+    padding: 20px;
+
+
+
+background: #0D0D0D;
+border-radius: 0px 0px 300px 0px;
+
+}
+.wrapper{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;}
+.chess{
+    /* position: absolute; */
+    /* left:20px; */
+    margin-top: -200px;
+    height: 50vh;
+    width: 50%;
+    
+    z-index: 5;
+    /* border:2px solid red; */
+}
+.chess img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 5%;
+}
+.head{
+    display: flex;
+    padding: 20px;
+    color: white;
+    flex-direction: column;
+    
+}
+.small-head{
+    padding: 20px;
+    display: flex;
+    color: white;
+    gap: 20px;
+}
+.head h1{
+    width:50%;
+    font-size: 8rem;
+
+}
+.small-head-about h1{
+    width: 80%  ;
+    /* border:2px solid black; */
+}
+.small-head h3:first-child{
+padding: 1rem;
+background: linear-gradient(114.44deg, #3644DB 6.56%, #D15BB2 116.73%);
+border-radius: 100px;
+
+
+
+}
+
+.circle{
+    height: 200px;
+    width: 200px;
+    margin-top: -200px;
+    border-radius: 50%;
+    z-index: 5;
+}
+.circle img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.small-head-about{
+margin-left: 25px;
+width: 100%;
+font-weight: 800;
+font-size: 16px;
+line-height: 87px;
+text-transform: capitalize;
+color: #0D0D0D;
+display: flex;
+/* flex-direction: column; */
+
+}
+.about{
+  
+padding: 20px 150px;
+width: 100%;
+height: 100vh;
+/* top: -550px; */
+background: #dadada;
+border-radius: 300px 0px 0px 0px;
+
+}
+.chess-about{
+    position: absolute;
+    /* left:20px; */
+    height: 50vh;
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 5;
+    /* border:2px solid red; */
+}
+.circle-about{
+    /* border:2px solid red; */
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    z-index: 5;
+}
+.chess-img{
+    width: 80%;
+    border-radius: 5%;
+}
+.chess-img img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 5%;
+}
+.circle-about img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* .choose{
+    width: 100%;
+    background-color: #dadada;
+    height: 100vh;
+    border:2px solid red;
+
+}
+.choose-box{
+    position: absolute;
+    width: 100%;
+    background-color:#0D0D0D;
+    height: 100vh;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+
+} */
+.choose{
+    background-color: #dadada   ;
+}
+.why-choose-us {
+    text-align: center;
+    margin :0 12rem;
+    padding: 20px;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+    color: aliceblue;
+    background-color:#0D0D0D;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    margin: 20px 0;
+}
+
+.feature img {
+    width: 80px; /* Adjust the size of the logo */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.sub-head {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.feature-text {
+    font-size: 14px;
+    color: #555;
+}   
